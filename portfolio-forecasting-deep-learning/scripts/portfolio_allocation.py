@@ -38,7 +38,8 @@ def evaluate_portfolio(df):
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
-    plt.show()
+    plt.savefig("portfolio_return.png")  # ✅ SAVE instead of showing
+
 
 
 def run():
@@ -57,3 +58,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+
